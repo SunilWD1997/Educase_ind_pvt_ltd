@@ -1,7 +1,9 @@
 import React from 'react';
-import './login.css';
+import './signup.css';
+import { NavLink } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
+   
     return (
 
 
@@ -15,19 +17,22 @@ const Login = () => {
                     <p className='text'>text, some random text, some random text</p>
                 </div>
 
+               
                 <div className="login_signup">
-                    <p>login</p>
-                    <p>signup</p>
+                    <p><NavLink to='/'>login</NavLink></p>
+                    <p><NavLink to='/signup'>signup</NavLink></p>
+                    
                 </div>
 
                 <form className='input_fields' action="">
                     <input type="email" name="email" autoComplete='off' placeholder='Email Address' />
                     <input type="password" name="password" placeholder='Password' />
-                    <button className='submit_btn'>login</button>
-                    <span className='forgot_pass'>Forgot Password?</span>
+                    <input type="password" name="cpassword" placeholder='Comfirm Password' />
+                    <button className='submit_btn'>Signup</button>
+                    {/* <span className='forgot_pass'>Forgot Password?</span> */}
                 </form>
 
-                <p className='login_with'>or login with</p>
+                <p className='login_with'>or signup with</p>
 
                 <div className="social_icons">
                     <img className='icons google' src="/images/google.png" alt="google" />
@@ -44,4 +49,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Signup

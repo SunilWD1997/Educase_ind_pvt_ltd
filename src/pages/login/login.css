@@ -39,6 +39,8 @@
 
 .login .content .react_logo {
   width: 9rem;
+  -webkit-animation: logoRotate 20s linear infinite forwards;
+          animation: logoRotate 20s linear infinite forwards;
 }
 
 .login .content .random_text {
@@ -72,12 +74,6 @@
   font-size: .8rem;
   padding-bottom: .3rem;
   cursor: pointer;
-}
-
-.login .content .login_signup p:hover {
-  border-bottom: 2px solid #e70b89;
-  font-weight: bold;
-  font-size: .75rem;
 }
 
 .login .content .input_fields {
@@ -187,5 +183,40 @@
   color: #ff0090;
   -webkit-transition: all .2s;
   transition: all .2s;
+}
+
+.active {
+  border-bottom: 2px solid #e70b89;
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+@-webkit-keyframes logoRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes logoRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .login .content {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=login.css.map */

@@ -48,11 +48,11 @@
                 padding-bottom: .3rem;
                 cursor: pointer;
 
-                &:hover {
-                    border-bottom: 2px solid #e70b89;
-                    font-weight: bold;
-                    font-size: .75rem;
-                }
+                // &:hover {
+                //     border-bottom: 2px solid #e70b89;
+                //     font-weight: bold;
+                //     font-size: .75rem;
+                // }
             }
         }
 
@@ -97,12 +97,12 @@
                 color: white;
                 margin-top: .5rem;
 
-                &:hover {
-                    background-color: #ff0090;
-                    cursor: pointer;
-                    transition: all .2s;
+                // &:hover {
+                //     background-color: #ff0090;
+                //     cursor: pointer;
+                //     transition: all .2s;
 
-                }
+                // }
 
             }
         }
@@ -156,3 +156,25 @@
     }
 }
 
+.active{
+    border-bottom: 2px solid #e70b89;
+    font-weight: bold;
+    font-size: .75rem;
+    padding-bottom: .4rem;
+    width: 9rem;
+    transition: all .2s;
+    text-align: center;
+    color: black;
+}
+
+
+@media screen and (max-width: 680px) {
+    .login{
+        
+        .content {
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+   
+}
